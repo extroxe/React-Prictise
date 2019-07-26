@@ -1,5 +1,8 @@
 import * as React from "react"
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
+import {createBrowserHistory} from "history";
+
+const history = createBrowserHistory()
 
 
 export default class Sign extends React.Component{
@@ -7,8 +10,8 @@ export default class Sign extends React.Component{
         return(
             <div>
                 test
-                <Link to={"/"}>container</Link>
-                {/*<button onClick={() => history.push("/")}>container</button>*/}
+                {/*<Link to={"/"}>container</Link>*/}
+                <button onClick={() => history.push("/")}>container</button>
             </div>
         )
     }

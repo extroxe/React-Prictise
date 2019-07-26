@@ -2,12 +2,13 @@ import * as React from "react"
 import {createBrowserHistory} from "history"
 import {Link} from "react-router-dom"
 
-const history = createBrowserHistory()
+const history = createBrowserHistory();
 
 export default class Container extends React.Component {
     constructor(props: any) {
-        super(props)
+        super(props);
     }
+
 
     goToPage = () => {
         history.push('/root')
@@ -21,7 +22,7 @@ export default class Container extends React.Component {
                 <h2>
                     xscds
                 </h2>
-                <Link to="/root">container</Link>
+                <Link to="/container">container</Link>
                 {/*<button onClick={this.goToPage}>Sign</button>*/}
             </div>
         )

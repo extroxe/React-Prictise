@@ -1,10 +1,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import {Router, Route, Switch} from 'react-router';
-import {createBrowserHistory} from 'history';
+// import {Router, Route, Switch} from 'react-router';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+// import {createBrowserHistory} from 'history';
 // import { useStrict } from 'mobx';
 import {Provider} from 'mobx-react';
-import {RouterStore, syncHistoryWithStore} from 'mobx-react-router';
+import {RouterStore} from 'mobx-react-router';
 // 定义需要使用到的store来进行数据状态的管理
 import {
     TokenStore,
@@ -19,10 +20,10 @@ import Container from './Containers/Container';
 // 开启mobx的严格模式，规范数据修改操作只能在action中进行
 // useStrict(true);
 
-const browserHistory = createBrowserHistory();
+// const browserHistory = createBrowserHistory();
 const routerStore = new RouterStore();
 // 同步路由与mobx的数据状态
-const history = syncHistoryWithStore(browserHistory, routerStore);
+// const history = syncHistoryWithStore(browserHistory, routerStore);
 const rootStore = {
     token: new TokenStore(),
     auth: new AuthStore(),
@@ -32,7 +33,7 @@ const rootStore = {
 ReactDOM.render(
     <Provider {...rootStore} >
         {/*<Root>*/}
-        <Router history={history}>
+        <Router>
             <Switch>
                 {/*<IndexRoute component={Container}/>*/}
                 <Route
@@ -40,6 +41,7 @@ ReactDOM.render(
                     component={Sign}/>
                 <Route
                     path="/"
+                    exact = {true}
                     component={Container}
                 />
             </Switch>
