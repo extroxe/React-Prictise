@@ -33,7 +33,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db27bfeb-d391-46b6-8f1d-fcd595ca0d49" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/eee.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/eee.tsx" afterDir="false" />
+>>>>>>> 81bfcfd... scsc
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
