@@ -1,3 +1,8 @@
-export const AAA = () => {
-    return <div>xsaxa <span>sxasxax</span></div>
-}
+export const AAA = () => <div>
+    <table>
+        <th>
+            xasxa
+        </th>
+    </table>
+</div>
+
