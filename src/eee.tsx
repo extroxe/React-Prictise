@@ -1,8 +1,3 @@
-export const AAA = () => <div>
-    <table>
-        <th>
-            xasxa
-        </th>
-    </table>
-</div>
-
+export const AAA = () => {
+    return <div>xsaxa <span>sxasxax</span><span>scscsc</span></div>
+}
